@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ai.dorvis.constraintlayout.MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Wel Come"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="SQlite Database "
+        app:layout_constraintLeft_toLeftOf="@id/text"
+        app:layout_constraintRight_toRightOf="@id/text"
+        app:layout_constraintTop_toBottomOf="@id/text" />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="CURD Operation"
+        app:layout_constraintLeft_toLeftOf="@id/text2"
+        app:layout_constraintRight_toRightOf="@id/text2"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        />
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter id"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="@id/text3"
+        app:layout_constraintRight_toRightOf="@id/text3"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+        />
+    <EditText
+        android:id="@+id/EditText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter name"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="@id/EditText"
+        app:layout_constraintRight_toRightOf="@id/EditText"
+        app:layout_constraintTop_toBottomOf="@id/EditText"
+        />
+    <EditText
+        android:id="@+id/EditText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter address"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="@id/EditText2"
+        app:layout_constraintRight_toRightOf="@id/EditText2"
+        app:layout_constraintTop_toBottomOf="@id/EditText2"
+        />
+
+    <EditText
+        android:id="@+id/EditText4"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:hint="enter the designation"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/EditText3"
+        app:layout_constraintRight_toRightOf="@id/EditText3"
+        app:layout_constraintTop_toBottomOf="@id/EditText3" />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:onClick="insert"
+        android:text="Insert"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/EditText3"
+        app:layout_constraintRight_toRightOf="@id/EditText3"
+        app:layout_constraintTop_toBottomOf="@id/EditText3" />
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:onClick="read"
+        android:text="Read"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@id/EditText3"
+        app:layout_constraintRight_toRightOf="@id/EditText3"
+        app:layout_constraintTop_toBottomOf="@id/EditText3" />
+
+    <Button
+        android:id="@+id/Button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="update"
+        android:text="Update"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/Button"
+        app:layout_constraintRight_toRightOf="@id/Button"
+        app:layout_constraintTop_toBottomOf="@id/Button" />
+
+    <Button
+        android:id="@+id/Button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="delete"
+        android:text="Delete"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/Button2"
+        app:layout_constraintRight_toRightOf="@id/Button2"
+        app:layout_constraintTop_toBottomOf="@id/Button2" />
+
+</android.support.constraint.ConstraintLayout>
