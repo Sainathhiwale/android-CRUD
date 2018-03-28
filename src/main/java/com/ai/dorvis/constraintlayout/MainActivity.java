@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
            Toast.makeText(getApplicationContext(),"data is not updated ",Toast.LENGTH_LONG).show();
        }
     }
-
+// delete the data into sqlite database
     public void delete(View view) {
         long count = dbase.delete("employee","id=? and design=?",new String[]{editText1.getText().toString(),
         editText4.getText().toString()});
